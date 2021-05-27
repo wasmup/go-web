@@ -1,0 +1,9 @@
+[Unit]
+Description=Web Server
+
+[Service]
+Type=notify
+ExecStart=/usr/sbin/go-web --ip 0.0.0.0:80
+
+[Install]
+WantedBy=multi-user.target
